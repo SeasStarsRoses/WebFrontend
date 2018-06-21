@@ -1,0 +1,16 @@
+{
+  "name": "grunt_sample",
+  "version": "1.0.0",
+  "description": "Grunt TypeScript Sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "pheide@t-online.de",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^3.0.0"
+  }
+}
