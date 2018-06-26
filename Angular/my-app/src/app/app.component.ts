@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  public hello: string = "Hello";
+  title = 'my-app';
+  public hello  = 'Hello';
+  currenttime : Date = new Date();
 }

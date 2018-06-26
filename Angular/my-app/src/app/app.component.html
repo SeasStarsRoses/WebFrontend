@@ -3,11 +3,16 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <h3>{{hello}}</h3>
-  <div>
+  <h3>{{hello | uppercase}}</h3>
+  <p>
     <input type="text" [(ngModel)]="hello" />
-  </div>
-  <!--<input type="text" [(ngModel)]="hello"/>-->
+  </p>
+  <div> The current time is {{currenttime | date:'HH:mm:ss'}} </div>
+  <p>
+    <input type="button" value="Reload" onclick="location.reload(false)"><br>
+  </p>
+
+  <button onclick="setTimeout(myFunction, 3000);">Try it</button>
 
   <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
