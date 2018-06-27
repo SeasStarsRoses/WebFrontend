@@ -12,6 +12,7 @@ export class AppComponent {
   maxLength = 8;
   currenttime: Date = new Date(); 
   list: number[] = []; 
+  positiveNegativNumbers: number[] = [-2, -1, 0, 1, 2];
   test(){ 
     console.log('hello')
   }
@@ -35,5 +36,14 @@ export class AppComponent {
         this.list.push(i);
       }
     }
+  }
+
+  public isEven(value: number): boolean {
+     if (value  % 2 == 0){
+        return(true);
+     }
+     else{
+        return(false);    
+     }
   }
 }

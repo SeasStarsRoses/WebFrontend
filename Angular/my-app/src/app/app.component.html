@@ -40,6 +40,20 @@
   <button (click)="calculatePrimeNumbers()">Calculate Prime Numbers</button>
 </p>
 <p>
-  List:<br>
-  <li *ngFor="let item of list">{{item}}</li>
+  List of even prime numbers:
+  <br>
+  <li *ngFor="let item of list">
+    <div *ngIf="isEven(item)">{{item}}</div>
+  </li>
 </p>
+<div style='display: inline'>
+  Show negative numbers
+  <div style='display: inline' class="red">red</div>
+  and positive numbers
+  <div style='display: inline' class="blue">blue</div>
+  :
+  <br>
+  <li *ngFor="let item of positiveNegativNumbers">
+    <div [ngClass]="{'red': item < 0, 'blue': item > 0}">{{item}}</div>
+  </li>
+</div>
