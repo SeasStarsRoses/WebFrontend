@@ -6,12 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'app';
   hello = 'Hello';
   primeNumbers = '';
   maxLength = 8;
-  currenttime: Date = new Date();
-  public reloadPage() {
+  currenttime: Date = new Date(); 
+  list: number[] = []; 
+  test(){ 
+    console.log('hello')
+  }
+  refresh(){ 
     location.reload(false);
   }
   public isPrimeNumber(candidate: number): boolean {
@@ -28,6 +32,7 @@ export class AppComponent {
       if (i !== 1 && result === true) {
         this.primeNumbers = this.primeNumbers + i + ' ';
         console.log(i);
+        this.list.push(i);
       }
     }
   }
