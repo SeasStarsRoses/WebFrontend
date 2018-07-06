@@ -1,4 +1,2 @@
 # WebFrontend
-WebFrontend: HTML, JavaScript, Cascadit Stype Sheets and TypeScript
-# Student Summary
-https://seasstarsroses.github.io/WebFrontend/JS/StudentSummary/index.html
+WebFrontend: HTML, JavaScript, Cascading Stype Sheets, TypeScript an Angular
